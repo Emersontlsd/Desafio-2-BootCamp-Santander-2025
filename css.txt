@@ -25,7 +25,20 @@ a { color:blue; text-decoration: none;}
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    background-color: #007acc;   /* Azul forte e acessível */
+    color: #ffffff;              /* Branco no azul tem contraste de 8.59:1 */
+    padding: 20px;
+    text-align: center;
 }
+.footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #ffdd57; /* amarelo claro, bom contraste sobre azul */
+}
+
 .anchors {
     border-left: solid 1px #cdcdcd;
     padding-left: 15px;

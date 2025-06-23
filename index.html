@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,63 +9,68 @@
 </head>
 <body>
 
-   <header class="header">
+    <header class="header" role="banner">
         <div class="logo-container">
-            <a href="index.html">
-                <img src="assets/images/wiki-filmes.png" alt="Wiki Filmes Logo" />
+            <a href="index.html" aria-label="Ir para a página inicial do Wiki Filmes">
+                <img src="assets/images/wiki-filmes.png" alt="Logo do site Wiki Filmes" />
             </a>
         </div>
     </header>
 
-    <div class="bar"></div>
+    <div class="bar" role="presentation"></div>
 
     <div class="content">
-        <div class="sidebar">
+        <aside class="sidebar" aria-label="Menu lateral de navegação">
             <h2>Sagas de Filmes</h2>
-            <ul>
-                <li><a href="theAvengers.html">Saga Vingadores</a></li>
-                <br><hr>
-                <h3>Breve Lançamentos</h3>
-                <li><a href="#">Saga Homem de Ferro ( BREVE )</a></li>
-                <li><a href="#">Saga Capitão América ( BREVE )</a></li>
-                <li><a href="#">Saga Hulk ( BREVE )</a></li>
-                <li><a href="#">Saga Veloses e Furiosos ( BREVE )</a></li>
-                <li><a href="#">Saga John Wick ( BREVE )</a></li>
-                <li><a href="#">Saga Missão Impossível ( BREVE )</a></li>
+            <nav aria-label="Navegação das sagas disponíveis">
+                <ul>
+                    <li><a href="theAvengers.html">Saga Vingadores</a></li>
+                    <br><hr>
+                    <h3>Lançamentos em breve</h3>
+                    <li><a href="#">Saga Homem de Ferro (em breve)</a></li>
+                    <li><a href="#">Saga Capitão América (em breve)</a></li>
+                    <li><a href="#">Saga Hulk (em breve)</a></li>
+                    <li><a href="#">Saga Velozes e Furiosos (em breve)</a></li>
+                    <li><a href="#">Saga John Wick (em breve)</a></li>
+                    <li><a href="#">Saga Missão Impossível (em breve)</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-            </ul>
-        </div>
-
-        <div class="main">
+        <main class="main">
             <h1>Bem-vindo ao Wiki Filmes</h1>
-            <p>Este site contém informações detalhadas sobre filmes de todos os gêneros, com foco em sagas e franquias famosas.</p>
-            <p>O intuito é apenas didático, criado para um projeto de bootcamp, onde o objetivo é praticar desenvolvimento web e organização de conteúdo.</p>
-            <p>Por ser um projeto de curso, o site poderá receber mais atualizações e novas seções em breve.</p>
-        </div>
+            <section aria-label="Descrição do site">
+                <p>Este site contém informações detalhadas sobre filmes de todos os gêneros, com foco em sagas e franquias famosas.</p>
+                <p>O intuito é apenas didático, criado para um projeto de bootcamp, onde o objetivo é praticar desenvolvimento web e organização de conteúdo.</p>
+                <p>Por ser um projeto de curso, o site poderá receber mais atualizações e novas seções em breve.</p>
+            </section>
+        </main>
 
-        <div class="anchors">
+        <aside class="anchors" aria-label="Navegação rápida">
             <h2>Navegação Rápida</h2>
-            <ul>
-                <li><a href="theAvengers.html">Saga Vingadores</a></li>
-                <br><hr>
-                <h3>Breve Lançamentos</h3>
-                <li><a href="#">Saga Homem de Ferro ( BREVE )</a></li>
-                <li><a href="#">Saga Capitão América ( BREVE )</a></li>
-                <li><a href="#">Saga Hulk ( BREVE )</a></li>
-                <li><a href="#">Saga Veloses e Furiosos ( BREVE )</a></li>
-                <li><a href="#">Saga John Wick ( BREVE )</a></li>
-                <li><a href="#">Saga Missão Impossível ( BREVE )</a></li>
-            </ul>
-        </div>
+            <nav aria-label="Links rápidos para páginas de sagas">
+                <ul>
+                    <li><a href="theAvengers.html">Saga Vingadores</a></li>
+                    <br><hr>
+                    <h3>Lançamentos em breve</h3>
+                    <li><a href="#">Saga Homem de Ferro (em breve)</a></li>
+                    <li><a href="#">Saga Capitão América (em breve)</a></li>
+                    <li><a href="#">Saga Hulk (em breve)</a></li>
+                    <li><a href="#">Saga Velozes e Furiosos (em breve)</a></li>
+                    <li><a href="#">Saga John Wick (em breve)</a></li>
+                    <li><a href="#">Saga Missão Impossível (em breve)</a></li>
+                </ul>
+            </nav>
+        </aside>
     </div>
 
-    <div class="footer">
+    <footer class="footer" role="contentinfo">
         <p>Contato: 
-            <a href="https://wa.me/5561982858372" target="_blank" rel="noopener noreferrer">WhatsApp</a> | 
-            <a href="mailto:emersontlsd@gmail.com">contato@wikifilmes.com</a>
+            <a href="https://wa.me/5561982858372" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">WhatsApp</a> | 
+            <a href="mailto:emersontlsd@gmail.com" aria-label="Envie um e-mail para contato@wikifilmes.com">contato@wikifilmes.com</a>
         </p>
         <p>&copy; 2025 Wiki Filmes. Todos os direitos reservados.</p>
-    </div>
+    </footer>
 
 </body>
 </html>
